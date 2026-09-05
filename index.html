@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TESEIIDP™ — Tovuti Inafanyiwa Marekebisho</title>
+<style>
+  :root {
+    --primary: #0f4c5c;
+    --accent: #ff6b35;
+    --bg: #f4f7f8;
+    --text: #1c2b30;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0f4c5c 0%, #145566 50%, #1c6b7a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--text);
+  }
+  .card {
+    background: #ffffff;
+    max-width: 640px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .header {
+    background: linear-gradient(135deg, var(--primary), #1c6b7a);
+    padding: 40px 30px 30px;
+    text-align: center;
+    color: #fff;
+  }
+  .logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .logo span { color: var(--accent); }
+  .icon-wrap {
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px;
+    animation: spin 3s linear infinite;
+  }
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  .icon-wrap svg { width: 45px; height: 45px; }
+  .body-content {
+    padding: 35px 35px 30px;
+    text-align: center;
+  }
+  .body-content h1 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+  .body-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4a5a5e;
+    margin-bottom: 12px;
+  }
+  .progress-bar {
+    background: #e6ecee;
+    border-radius: 50px;
+    height: 10px;
+    margin: 25px 0 10px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    background: linear-gradient(90deg, var(--accent), #ff8c5a);
+    height: 100%;
+    width: 65%;
+    border-radius: 50px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  .progress-label {
+    font-size: 13px;
+    color: #8a9a9e;
+    margin-bottom: 20px;
+  }
+  .apology-box {
+    background: #fff4ed;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 15px 18px;
+    text-align: right;
+    font-size: 14.5px;
+    color: #6b3d1f;
+    margin-top: 10px;
+  }
+  .contact {
+    background: var(--bg);
+    padding: 25px 35px;
+    text-align: center;
+    border-top: 1px solid #e6ecee;
+  }
+  .contact h3 {
+    font-size: 15px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .contact-items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #3d4d51;
+    text-decoration: none;
+  }
+  .contact-item svg { width: 18px; height: 18px; fill: var(--accent); flex-shrink: 0; }
+  .footer-note {
+    text-align: center;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 18px;
+  }
+  @media (max-width: 480px) {
+    .body-content h1 { font-size: 20px; }
+    .contact-items { flex-direction: column; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="card">
+      <div class="header">
+        <div class="logo">TESE<span>IIDP</span>™</div>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+            <path d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.53 1.53 0 0 1-2.28.94c-1.37-.84-2.94.73-2.1 2.1.53.86.03 1.98-.94 2.28-1.56.38-1.56 2.6 0 2.98a1.53 1.53 0 0 1 .94 2.28c-.84 1.37.73 2.94 2.1 2.1a1.53 1.53 0 0 1 2.28.94c.38 1.56 2.6 1.56 2.98 0a1.53 1.53 0 0 1 2.28-.94c1.37.84 2.94-.73 2.1-2.1a1.53 1.53 0 0 1 .94-2.28c1.56-.38 1.56-2.6 0-2.98a1.53 1.53 0 0 1-.94-2.28c.84-1.37-.73-2.94-2.1-2.1a1.53 1.53 0 0 1-2.28-.94Z" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="body-content">
+        <h1>Tovuti Inafanyiwa Marekebisho ya Kiufundi</h1>
+        <p>Tunafanya maboresho muhimu kwenye mfumo wetu ili kukuletea huduma bora zaidi. Tovuti itarejea katika hali yake ya kawaida hivi karibuni.</p>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-label">Maendeleo ya marekebisho — takribani 65%</div>
+
+        <div class="apology-box">
+          Tunaomba radhi kwa usumbufu wowote unaoweza kujitokeza wakati wa kipindi hiki cha marekebisho. Tunathamini uvumilivu wako na tunafanya kazi kwa bidii kuhakikisha huduma inarejea haraka iwezekanavyo.
+        </div>
+      </div>
+
+      <div class="contact">
+        <h3>Wasiliana Nasi</h3>
+        <div class="contact-items">
+          <a href="mailto:info@teseiidp.org" class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            gj653451@gmail.com
+          </a>
+          <a href="tel:+255759032921" class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1.1L6.6 10.8z"/></svg>
+            +255 759 032 921
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">© 2026 TESEIIDP™ — Sponser by Gk-company</div>
+  </div>
+</body>
+</html>

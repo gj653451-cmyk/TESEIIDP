@@ -1,0 +1,11 @@
+/* Mwendo mmoja uliopangwa: ramani ya maeneo inajichora ukurasa unapofunguka. */
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+.link{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s ease-out forwards}
+.node{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .45s ease-out forwards}
+.node:nth-of-type(1){animation-delay:.5s}.node:nth-of-type(2){animation-delay:.7s}.node:nth-of-type(3){animation-delay:.85s}
+.node:nth-of-type(4){animation-delay:1s}.node:nth-of-type(5){animation-delay:1.15s}.node:nth-of-type(6){animation-delay:1.3s}
+.bar i{transition:width .25s ease}
+@media (prefers-reduced-motion:reduce){
+  .link{animation:none;stroke-dashoffset:0}.node{animation:none;opacity:1}.bar i{transition:none}
+}

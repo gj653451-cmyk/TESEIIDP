@@ -1,0 +1,14 @@
+/* Fonti na mfumo wa maandishi */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+:root{
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --t-sm:.9rem; --t-base:1.0625rem; --t-lg:1.3rem; --t-xl:clamp(1.6rem,3vw,2.2rem);
+  --t-hero:clamp(2.3rem,6.2vw,4.4rem);
+}
+body{font-family:var(--f-body);font-size:var(--t-base);line-height:1.65}
+h1,h2,h3,.brand,.btn,nav a,label,.chip{font-family:var(--f-display)}
+h1{font-size:var(--t-hero);line-height:1.02;letter-spacing:-.03em;font-weight:800}
+h2{font-size:var(--t-xl);line-height:1.1;letter-spacing:-.02em;font-weight:700}
+h3{font-size:var(--t-lg);line-height:1.2;font-weight:700}
+p{max-width:62ch}

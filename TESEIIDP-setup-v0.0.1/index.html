@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TESEIIDP™ | Innovation for Progress</title>
+<meta name="description" content="Jukwaa la teknolojia, sayansi, uhandisi na ubunifu kwa maendeleo ya jamii.">
+<link rel="stylesheet" href="css/front.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">TESEIIDP<span>™</span></a>
+    <button class="icon-btn" id="menuBtn" aria-label="Fungua menyu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Menyu kuu">
+      <a href="index.html" aria-current="page">Nyumbani</a>
+      <a href="about.html">Kuhusu</a>
+      <a href="contact.html">Mawasiliano</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Badilisha mwonekano">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div>
+    <p class="motto">Innovation for Progress</p>
+    <h1>Jifunze teknolojia. Jenga kitu chako.</h1>
+    <p class="lead">TESEIIDP ni jukwaa la kujifunza, kuchunguza na kubuni teknolojia, sayansi na uhandisi, pamoja na wengine wenye shauku kama yako.</p>
+    <div class="btns">
+      <a class="btn" href="#maeneo">Angalia maeneo</a>
+      <a class="btn alt" href="contact.html">Wasiliana nasi</a>
+    </div>
+  </div>
+  <div class="map-box">
+    <svg id="map" viewBox="0 0 400 400" role="group" aria-label="Maeneo makuu ya TESEIIDP"></svg>
+    <div id="areaInfo" aria-live="polite"><h3></h3><p></p></div>
+  </div>
+</section>
+
+<section id="maeneo" class="wrap">
+  <h2>Maeneo makuu</h2>
+  <p class="sub">Chagua eneo, anzia hapo ulipo.</p>
+  <div class="grid" id="areaGrid"></div>
+</section>
+
+<section class="wrap" id="huduma">
+  <h2>Sehemu za jukwaa</h2>
+  <p class="sub">Tovuti hii ni toleo la kwanza. Sehemu zilizoandikwa "Inakuja" bado ziko kwenye maandalizi.</p>
+  <ul class="list" id="sectionList"></ul>
+</section>
+
+<section class="wrap" id="uanachama">
+  <h2>Uanachama wa madaraja matatu</h2>
+  <div class="grid" id="planGrid"></div>
+  <div class="xp">
+    <label for="xpRange">Mfano wa viwango vya Common: sogeza uone Level</label>
+    <input type="range" id="xpRange" min="1" max="100" value="1">
+    <div class="bar" aria-hidden="true"><i id="xpFill"></i></div>
+    <p id="xpText" class="sub" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Una wazo, swali au unataka kushirikiana?</h2>
+    <p>Tuandikie. Tunajenga hatua kwa hatua na maoni yako yanasaidia.</p>
+    <a class="btn" href="contact.html">Tuma ujumbe</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span data-year>2026</span> TESEIIDP™ · <span data-version>v0.0.1</span></span>
+    <span><a href="mailto:gj653451@gmail.com">gj653451@gmail.com</a> · <a href="tel:+255759032921">+255 759 032 921</a></span>
+  </div>
+</footer>
+<script src="js/configer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
